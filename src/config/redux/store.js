@@ -1,25 +1,5 @@
 import { createStore } from "redux";
-
-const initialState = {
-  dataBlogs: [],
-  name: "chaedir",
-};
-
-const reducer = (state = initialState, action) => {
-  if (action.type === "UPDATE_DATA_BLOG") {
-    return {
-      ...state,
-      dataBlogs: action.payload,
-    };
-  }
-  if (action.type === "UPDATE_NAME") {
-    return {
-      ...state,
-      name: "Hudoro",
-    };
-  }
-  return state;
-};
+import reducer from "./reducer/reducer";
 
 const store = createStore(reducer);
 
