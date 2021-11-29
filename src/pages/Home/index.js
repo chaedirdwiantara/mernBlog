@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { BlogItem, Button, Gap } from "../../components";
 import "./home.scss";
 import { useHistory } from "react-router-dom";
-import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setDataBlog } from "../../config/redux/action";
 
